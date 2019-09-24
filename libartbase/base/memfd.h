@@ -27,8 +27,7 @@
 
 namespace art {
 
-// Call memfd(2) if available on platform and return result. This call also makes a kernel version
-// check for safety on older kernels (b/116769556)..
+  // Call memfd(2) if available on platform and return result.
 int memfd_create(const char* name, unsigned int flags);
 
 // Return whether the kernel supports sealing future writes of a memfd.
